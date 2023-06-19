@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditins</title>
+</head>
+<body>
+    
+    <center>
+        <h1> This is the jinja operational tage to diaply to back end to front end</h1>
+    <!-- if condtions
+        {% if a > 20 %}
+        <h1>In side if block</h1>
+        <h1> a value is {{a}}</h1>
+    -->
+    <!-- ifelse conditions
+        {% if a > 20 %}
+            <h1>In side if block</h1>
+            <h1> a value is {{a}}</h1>
+        {% else %}
+            <h1>Inside the else block</h1>
+            <h1>a value is {{a}}</h1>
+        {% endif %}
+    -->
+
+    <!--
+         {% if a > b and a > c %}
+        <h1>Inside if Conditins</h1>
+        <h1>a is max</h1>
+    {% elif b > c %}
+        <h1>inside elif block</h1>
+        <h1>b is max</h1>
+    {% else %}
+        <h1> inside else block</h1>
+        <h1> c is max</h1>
+    {% endif %}
+    -->
+
+    {% if a > b %}
+        {% if a > c %}
+            <h1> a is max</h1>
+        {% else %}
+            <h1>c is max</h1>
+        {% endif %}
+    {% else %}
+        {% if b > c %}
+            <h1> b is max</h1>
+        {% else %}
+            <h1>c is max</h1>
+        {% endif %}
+    {% endif %}
+
+
+
+
+    </center>
+</body>
+</html>
